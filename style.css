@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=El+Messiri:wght@400..700&family=Markazi+Text:wght@400..700&family=Noto+Naskh+Arabic:wght@400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #ffff;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 85px;
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  background: #e9ecef;
+  padding: 25px 21px;
+  transition: all 0.4s ease;
+}
+
+.sidebar:hover {
+  width: 250px;
+}
+
+.sidebar-links {
+  list-style: none;
+  margin-top: 20px;
+  height: 80%;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.sidebar-links li a {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+  color: #111111;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: "El Messiri", serif;
+  white-space: nowrap;
+  padding: 15px 10px;
+  text-decoration: none;
+  transition: 0.2s ease;
+  border-bottom: solid 2px #ffff;
+}
+
+.sidebar-links li a:hover {
+  color: #f81d1d;
+  border-radius: 4px;
+}
+footer {
+  color: #014f86;
+  font-family: Almarai;
+  font-weight: 400;
+}
+.bi-bookmark-star {
+  color: #f81d1d;
+}
